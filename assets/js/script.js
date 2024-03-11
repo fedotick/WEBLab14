@@ -81,3 +81,29 @@ switch (yyyy % 12) {
 response += "!";
 
 alert(response);
+
+// 2
+let a = 2;
+let b = 10;
+
+function isSimple(number) {
+    for (let i = 2; i <= Math.sqrt(number); i++) {
+        if (number % i == 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+response = "";
+
+for (let i = a; i <= b; i++) {
+    if (isSimple(i)) {
+        response += i;
+        if (i < b) {
+            response += ", ";
+        }
+    }
+}
+
+alert(response);
