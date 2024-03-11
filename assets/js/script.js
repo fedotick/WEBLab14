@@ -126,3 +126,44 @@ for (let i = 0; i < 3; i++) {
 
     alert("Подумай еще.");
 }
+
+// 4
+let product1 = 2.98;
+let product2 = 4.50;
+let product3 = 9.98;
+let product4 = 4.49;
+let product5 = 6.87;
+
+let chois, amount;
+let price;
+
+while (true) {
+    chois = +prompt("Введите номер продукта:");
+    if (chois == 0) {
+        break;
+    }
+
+    amount = +prompt("ЦЕНЫ\nПродукт 1: " + product1 + "\nПродукт 2: " + product2 + "\nПродукт 3: " + product3 + "\nПродукт 4: " + product4 + "\nПродукт 5: " + product5 + "\nВведите проданное количество:");
+    
+    switch (chois) {
+        case 1:
+            price = product1;
+            break;
+        case 2: 
+            price = product2;
+            break;
+        case 3: 
+            price = product3;
+            break;
+        case 4: 
+            price = product4;
+            break;
+        case 5: 
+            price = product5;
+            break;
+    }
+
+    answer = "Продукт: " + chois + "\nЦена: " + price + "\nПроданно: " + amount + "\nОбщ. стоимость: " + price * amount;
+
+    alert(answer);
+} 
