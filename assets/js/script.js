@@ -99,10 +99,7 @@ response = "";
 
 for (let i = a; i <= b; i++) {
     if (isSimple(i)) {
-        response += i;
-        if (i < b) {
-            response += ", ";
-        }
+        response += i + ", ";
     }
 }
 
