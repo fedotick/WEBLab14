@@ -135,12 +135,12 @@ let chois, amount;
 let price;
 
 while (true) {
-    chois = +prompt("Введите номер продукта:");
+    chois = +prompt("ЦЕНЫ\nПродукт 1: " + product1 + "\nПродукт 2: " + product2 + "\nПродукт 3: " + product3 + "\nПродукт 4: " + product4 + "\nПродукт 5: " + product5 + "\n\nВведите номер продукта:");
     if (chois == 0) {
         break;
     }
 
-    amount = +prompt("ЦЕНЫ\nПродукт 1: " + product1 + "\nПродукт 2: " + product2 + "\nПродукт 3: " + product3 + "\nПродукт 4: " + product4 + "\nПродукт 5: " + product5 + "\nВведите проданное количество:");
+    amount = +prompt("ПРОДУКТ " + chois + "\n\nВведите проданное количество:");
     
     switch (chois) {
         case 1:
@@ -160,7 +160,7 @@ while (true) {
             break;
     }
 
-    answer = "Продукт: " + chois + "\nЦена: " + price + "\nПроданно: " + amount + "\nОбщ. стоимость: " + price * amount;
+    answer = "ПРОДУКТ " + chois + "\nЦена: " + price + "\nПроданно: " + amount + "\nОбщ. стоимость: " + price * amount;
 
     alert(answer);
 } 
